@@ -1,0 +1,96 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "plugins": [
+    "stylelint-order",
+    "stylelint-scss"
+  ],
+  "rules": {
+    "indentation": 4,
+    "order/order": [
+      "custom-properties",
+      "dollar-variables",
+      "declarations",
+      "rules",
+      "at-rules"
+    ],
+    "order/properties-order": [
+      "box-sizing",
+      "display",
+      {
+        "groupName": "flex",
+        "emptyLineBefore": "never",
+        "properties": [
+          "flex",
+          "flex-basis",
+          "flex-direction",
+          "flex-wrap",
+          "flex-flow",
+          "flex-shrink",
+          "flex-grow",
+          "flex-order",
+          "flex-pack",
+          "align-content",
+          "align-items",
+          "align-self",
+          "justify-content"
+        ]
+      },
+      {
+        "groupName": "bbox",
+        "emptyLineBefore": "never",
+        "properties": [
+          "width",
+          "min-width",
+          "max-width",
+          "height",
+          "min-height",
+          "max-height",
+          "padding",
+          "padding-top",
+          "padding-right",
+          "padding-bottom",
+          "padding-left",
+          "border",
+          "border-top",
+          "border-right",
+          "border-bottom",
+          "border-left",
+          "margin",
+          "margin-top",
+          "margin-right",
+          "margin-bottom",
+          "margin-left"
+        ]
+      },
+      {
+        "groupName": "font",
+        "emptyLineBefore": "never",
+        "properties": [
+          "font",
+          "font-family",
+          "font-size",
+          "font-style",
+          "font-weight"
+        ]
+      },
+      {
+        "groupName": "position",
+        "emptyLineBefore": "never",
+        "properties": [
+          "position",
+          "top",
+          "right",
+          "bottom",
+          "left",
+          "z-index"
+        ]
+      }
+    ],
+    "order/properties-alphabetical-order": false,
+    "selector-class-pattern": null,
+    "block-opening-brace-space-before": "always-single-line",
+    "declaration-block-trailing-semicolon": "never",
+    "selector-list-comma-newline-after": "never-multi-line",
+    "max-nesting-depth": 2
+  }
+}

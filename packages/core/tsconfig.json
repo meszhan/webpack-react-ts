@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        // 语法与转义类配置
+        "target": "ES2015",
+        "lib": [
+            "DOM",
+            "ESNext"
+        ],
+        // 模块化配置
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        // jsx配置
+        // 这个属性暂时先写为react, 因为react-jsx分react-jsx和react-jsxdev, 具体用哪个是产品线自己决定的好
+        "jsx": "react",
+        // 检查规则类配置， 团队推荐使用较为严格的配置
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUncheckedIndexedAccess": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        // 语法与代码生产类配置
+        "experimentalDecorators": true,
+        "useDefineForClassFields": true,
+        // 引入tslib, 使用babel做编译时会自动忽略， 所以加上是没有问题的
+        "importHelpers": true,
+        "downlevelIteration": true,
+        "isolatedModules": true,
+        "baseUrl": ".",
+        "noImplicitAny": false,
+        "paths": {},
+        // 4.3
+        "noImplicitOverride": true,
+        // 4.4
+        "exactOptionalPropertyTypes": true
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    }
+}

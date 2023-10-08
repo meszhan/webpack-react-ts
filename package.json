@@ -1,0 +1,27 @@
+{
+    "name": "webpack-react-ts",
+    "description": "",
+    "private": true,
+    "author": "zhanzhiguo",
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "build": "yarn workspace @meszhan/core build",
+        "clean:packages": "yarn workspaces foreach run clean -p",
+        "dev": "yarn workspace @meszhan/core dev"
+    },
+    "devDependencies": {
+        "@nx/devkit": "16.7.1",
+        "@nx/js": "16.7.1",
+        "@nx/plugin": "16.7.1",
+        "lerna": "^6.6.1",
+        "nx": "^15.9.2"
+    },
+    "resolutions": {
+        "@types/rimraf": "^3",
+        "antd": "~4.22.8",
+        "typescript": "~4.9.5"
+    },
+    "packageManager": "yarn@3.3.1"
+}
